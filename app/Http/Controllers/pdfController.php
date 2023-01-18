@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\product;
 use App\Models\cart;
 use App\Models\order;
-use PDF;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
@@ -14,7 +14,9 @@ class pdfController extends Controller
     {
         $cart=cart::all()->where('userID',Auth::id())->where('orderID',$id);
         $order=order::all()->where('id',$id);
-        $pdf = PDF::loadView('user\myPDF',compact('order','cart'))->setOptions(['defaultFont' => 'sans-serif']);
+        
+        $pdf = PDF::loadView('user\receipt',compact('order','cart'))->setOptions(['defaultFont' => 'sans-serif']);
+
         return $pdf->download('report.pdf');
     }
 
