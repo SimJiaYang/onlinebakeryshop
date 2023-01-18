@@ -153,9 +153,10 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <h4 class="text-light mb-4">Office Address</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>PTD 64888, Jalan Selatan Utama, KM 15, Off, 
+                            Skudai Lbh, 81300 Skudai, Johor</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>07-558 6605</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>secretarial@sc.edu.my</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
