@@ -136,7 +136,7 @@
             <tr>
                 <td colspan="4">
                     <div class="d-flex align-items-center justify-content-end">
-                      <p class="h4 mb-0">Delivery Time</p>
+                      <p class="h4 mb-0">Delivery Date and Time</p>
                   </div>
                 </td>
 
