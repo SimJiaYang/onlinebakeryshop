@@ -6,6 +6,7 @@ use App\Models\product;
 use App\Models\category;
 use Illuminate\Http\Request;
 
+// Using it directly in the code without the use operator won't.
 class HomeController extends Controller
 {
     /**
@@ -26,18 +27,6 @@ class HomeController extends Controller
     public function home()
     {
         $products = product::where('quantity', '>', 0)->get();
-        // $category = category::all();
-
-        // if (Auth::user()){
-        //     if (Auth::user()->type == 'admin') {
-        //         return view('admin\admin')
-        //         ->with('products',$products)
-        //         ->with('category',$category);
-        //     }    
-        // }else {
-        //     return view('layouts\home\index')
-        //     ->with('products',$products);
-        // }
         return view('layouts\home\index')
             ->with('products',$products);
     }
@@ -82,4 +71,5 @@ class HomeController extends Controller
     public function error(){
         return view('layouts.home.404');
     }
+
 }
