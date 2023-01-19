@@ -17,4 +17,8 @@ class categoryController extends Controller
         ]);
         return redirect()->route('insertCategory');// step 5 back to last page       
     }
+
+    public function blank(){
+
+    }
 }
