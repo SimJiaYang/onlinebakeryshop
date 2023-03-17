@@ -23,4 +23,5 @@
         <a href="{{route('dashboard')}}" class="btn btn-secondary mt-2">Back</a>
     </form>
 </div>
+  
 @endsection

@@ -136,6 +136,12 @@ class productController extends Controller
         $products = product::where('name', 'like', "%$keyword%")
         ->get();
 
+        //If result ==0
+        if ($products->count() === 0) {
+            Session::flash('notFound','We could not find this products, please tried again');
+            return redirect()->route('product');
+        }
+
         return view('layouts\home\product')
         ->with('products',$products);
     }
